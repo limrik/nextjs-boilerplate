@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <Link
           href="/pages/page1"
           className={`homepage-link ${
-            pathname === "/pages/page1" ? "selected" : ""
+            pathname === "/pages/page1" || "/pages" ? "selected" : ""
           }`}
         >
           Page 1
