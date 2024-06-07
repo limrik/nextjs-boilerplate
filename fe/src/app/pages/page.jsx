@@ -1,8 +1,8 @@
 import React from "react"
-import Page1 from "./page1/page"
+import Form from "./form/page"
 
 function page() {
-  return <Page1 />
+  return <Form />
 }
 
 export default page

@@ -10,24 +10,24 @@ export default function Layout({ children }) {
     <div className="w-full bg-grey flex flex-col p-8">
       <nav className="flex flex-row gap-6">
         <Link
-          href="/pages/page1"
+          href="/pages/form"
           className={`homepage-link ${
-            pathname === "/pages/page1" || "/pages" ? "selected" : ""
+            pathname === ("/pages/form" || "/pages") ? "selected" : ""
           }`}
         >
-          Page 1
+          Form
         </Link>
         <Link
-          href="/pages/page2"
+          href="/pages/media"
           className={`homepage-link ${
-            pathname === "/pages/page2" ? "selected" : ""
+            pathname === "/pages/media" ? "selected" : ""
           }`}
         >
-          Page 2
+          Media
         </Link>
       </nav>
 
-      <main className="border rounded-md border-black/30 h-[80vh] w-full">
+      <main className="border rounded-md border-black/30 h-[80vh] w-full overflow-hidden">
         {children}
       </main>
     </div>
